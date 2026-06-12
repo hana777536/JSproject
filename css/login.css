@@ -1,0 +1,119 @@
+/* Simple login form with a hint of blue */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(180deg, #eaf4ff 0%, #f8fbff 100%);
+	color: #1f2d3d;
+}
+
+.auth-container {
+	width: 100%;
+	max-width: 500px;
+	padding: 24px;
+}
+
+.auth-card {
+	background: #fff;
+	border-radius: 12px;
+	padding: 30px 26px;
+	box-shadow: 0 8px 30px rgba(31, 45, 61, 0.08);
+	text-align: center;
+}
+
+.logo {
+	width: 64px;
+	height: 64px;
+	margin: 0 auto 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	background: linear-gradient(135deg, #d9eefc, #c6e3ff);
+	color: #0b61d6;
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+
+.subtitle {
+	font-size: 13px;
+	color: #667085;
+	margin-bottom: 18px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 6px;
+}
+
+input[type="email"],
+input[type="password"] {
+	width: 100%;
+	padding: 12px 14px;
+	border: 1px solid #e6eef9;
+	border-radius: 8px;
+	background: #fbfeff;
+	font-size: 14px;
+	color: #0f1720;
+	outline: none;
+	transition: box-shadow .15s, border-color .15s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+	border-color: #7fb0ff;
+	box-shadow: 0 6px 18px rgba(35, 100, 255, 0.06);
+}
+
+button {
+	padding: 11px 14px;
+	border-radius: 8px;
+	border: 0;
+	background: linear-gradient(180deg, #1673ff, #0b5ed7);
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 15px;
+	box-shadow: 0 6px 18px rgba(11, 94, 215, 0.12);
+}
+
+button:hover {
+	filter: brightness(.98);
+	transform: translateY(-1px);
+}
+
+.bottom-text {
+	font-size: 13px;
+	color: #667085;
+	margin-top: 14px;
+}
+
+.bottom-text a {
+	color: #1466d6;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+@media (max-width: 420px) {
+	.auth-card {
+		padding: 20px;
+		margin: 12px;
+		border-radius: 10px;
+	}
+}
+
