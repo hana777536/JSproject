@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body id="dashboard">
+
+<header class="header">
+
+    <div class="logo">
+        <i class="fa-solid fa-clock"></i>
+        <h1>Time Tracker</h1>
+    </div>
+
+   <div class="user" id="username">
+</div>
+
+</header>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <nav>
+
+            <a href="dashboard.html" class="active">
+                Dashboard
+            </a>
+
+            <a href="timeEntries.html">
+                Time Entries
+            </a>
+
+            <a href="#">
+                Projects
+            </a>
+
+            <a href="#">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="page-header">
+
+            <h2>Dashboard</h2>
+
+            <div class="actions">
+
+                <input
+                    type="text"
+                    placeholder="Search entries...">
+
+                <a
+                    href="createEntry.html"
+                    class="btn-primary">
+                    Add Entry
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>Total Hours</h3>
+                <span id="totalHours">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Active Projects</h3>
+                <span id="activeProjects">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Pending Tasks</h3>
+                <span id="pendingTasks">0</span>
+            </div>
+
+        </div>
+
+    <div class="recent">
+
+    <h3>Recent Entries</h3>
+
+    <table class="entries-table">
+
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Project</th>
+                <th>Hours</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="recentEntries">
+
+        </tbody>
+
+    </table>
+
+</div>
+</div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
